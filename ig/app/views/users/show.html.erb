@@ -9,8 +9,8 @@
     
     <div class="col-md-8 basic-info">
       <div class="user-wrapper">
-        <h2 class="username">bognetomalone</h2>
-        <a class="edit-profile">
+        <h2 class="username"><%= current_user.username %></h2>
+        <a class="edit-profile" href="<%= edit_user_path(current_user) %>">
           <button>Edit Profile</button>
         </a>
       </div>
@@ -19,8 +19,8 @@
         <li><span>195</span> followers</li>
         <li><span>345</span> following</li>
       </ul>
-      <h2 class="name">Bogneto Malone</h2>
-      <a class="website">getadeo.com</a>
+      <h2 class="name"><%= current_user.name %></h2>
+      <a class="website"><%= current_user.website %></a>
     </div>
   </div>
 </div>
